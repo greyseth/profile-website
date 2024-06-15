@@ -295,7 +295,7 @@
 
 .more-buttons {
   width: 100vw;
-  height: 250px;
+  height: fit-content;
   display: flex;
   justify-content: space-evenly;
   font-family: "Russo One", sans-serif;
@@ -335,6 +335,39 @@
   /* height will be 150px */
   opacity: 0;
   transition: 1s;
+}
+
+.find-me-container {
+  width: 100%;
+  margin-bottom: 3em;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.find-me-container * {
+  color: white;
+}
+.find-me-container > h2 {
+  margin-bottom: 1em;
+}
+.find-me {
+  border: 2px solid #bc6ff1;
+  padding: 2em;
+}
+.find-me img {
+  width: 8em;
+  height: auto;
+  aspect-ratio: 1/1;
+  transition: 0.5s;
+}
+.find-me a:not(:last-child) {
+  margin-right: 2em;
+}
+.find-me img:hover {
+  transform: scale(110%);
+  cursor: pointer;
 }
 
 .message-container {
